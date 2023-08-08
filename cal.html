@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        text-align: center;
+        margin-top: 200px;
+        background-image: url("cal.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+       }
+       table{
+        text-align: center;
+        
+        margin-top:5px;
+        
+       }
+       table tr td{
+        padding:5px;
+       }
+      
+    .calculator{
+        border:2px solid black;
+        margin-top: 10px;
+        margin-left: 610px;
+        margin-right: 610px;
+        }
+    
+       button{
+        padding:25px;
+        border-radius: 20%;
+        background-color: antiquewhite;
+       }
+       button:hover{
+        background-color:blanchedalmond;
+       }
+       #result{
+          height:50px;
+          width:280px;
+          margin-top: 10px;
+          border: 2px solid black;
+          background-color: ghostwhite;
+       }
+    </style>
+</head>
+<body>
+    <h1> My Calculator!</h1>
+    <div class="calculator">
+
+
+    <input type="text" id="result" readonly;>
+    <table>
+<tr>
+    <td><button onclick="append(7)">7</button></td>
+    <td><button onclick="append(8)">8</button></td>
+    <td><button onclick="append(9)">9</button></td>
+    <td><button onclick="operation('+')">+</button></td>
+</tr>
+<tr>
+    <td><button onclick="append(4)">4</button></td>
+    <td><button onclick="append(5)">5</button></td>
+    <td><button onclick="append(6)">6</button></td>
+    <td><button onclick="operation('-')">-</button></td>
+</tr>
+<tr>
+    <td><button onclick="append(1)">1</button></td>
+    <td><button onclick="append(2)">2</button></td>
+    <td><button onclick="append(3)">3</button></td>
+    <td><button onclick="operation('*')">*</button></td>
+</tr>
+<tr>
+    <td><button onclick="append(0)">0</button></td>
+    <td><button onclick="clearresult('c')">c</button></td>
+    <td><button onclick="calculate('=')">=</button></td>
+    <td><button onclick="operation('/')">/</button></td>
+</tr>
+    </table>
+   </div>
+    <script src="cal.js"></script>
+</body>
+</html>
